@@ -16,10 +16,10 @@ const Routes = () =>
             <NavBarComponent/>
             <br/>
                 <Switch>
-                    <Route path="/" exact component={Carrul}/>
-                    <Route path="/oldtable" component={ComponentMeme}/>
-                    <Route path="/bootstable" component={BootsTable}/>
-                    <Route path="/newmeme" component={CreateMemesControl}/>
+                    <Route path="/memewuux/" exact component={Carrul}/>
+                    <Route path="/memewuux/oldtable" component={ComponentMeme}/>
+                    <Route path="/memewuux/bootstable" component={BootsTable}/>
+                    <Route path="/memewuux/newmeme" component={CreateMemesControl}/>
                 </Switch>
         </Router>
     )
