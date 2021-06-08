@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React,{useState} from 'react';
+import {Container,Col,Row} from 'react-bootstrap'
+import Header from './Components/Header'
+import Routes from './Routes/Routes'
+const App= ()=> {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Row>
+      <Col>
+          <Container>
+            <Header/>
+          </Container>
+      </Col>
+      </Row>
+      <Row>
+        <Col></Col>
+          <Col>
+            <h1 className='text-center'>App Memes</h1>
+          </Col>
+        <Col></Col>
+      </Row>
+      <Row>
+      <Col>
+        <Routes />
+      </Col>
+      </Row>
     </div>
   );
 }
