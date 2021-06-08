@@ -2,7 +2,7 @@ import React from 'react'
 import {
     BrowserRouter as Router,
     Switch,
-    Route,withRouter
+    Route
 } from "react-router-dom";
 import ComponentMeme from '../Components/Start'
 import Carrul from '../Components/Carrusel'
